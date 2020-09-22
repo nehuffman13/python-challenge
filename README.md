@@ -32,6 +32,24 @@ Greatest Increase in Profits:  Feb-2012 ($1926159)
 Greatest Decrease in Losses:  Sep-2013 ($-2196167)
 
 (PythonData) nicoles-mbp:PyBank nicolehuffman$ 
+ 
+
+
+# PyPoll 
+
+I was tasked with helping a small, rural town modernize its vote counting process by:
+
+
+  - The total number of votes cast
+
+  - A complete list of candidates who received votes
+
+  - The percentage of votes each candidate won
+
+  - The total number of votes each candidate won
+
+  - The winner of the election based on popular vote.
+  
   
   
  
