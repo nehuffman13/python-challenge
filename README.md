@@ -50,6 +50,14 @@ I was tasked with helping a small, rural town modernize its vote counting proces
 
   - The winner of the election based on popular vote.
   
+  Election Results
+-------------------------
+Total Votes:  3521001
+K
+h
+a
+n
+  
   
   
  
