@@ -1,4 +1,4 @@
-#import
+# importing data 
 import os
 import csv
 import collections
@@ -6,17 +6,24 @@ from collections import Counter
 
 election_data_csv_path = os.path.join("election_data.csv")
 
+# variable definitions
 candidates = []
 votes_total = 0
 votes_per_candidates = []
 months_count = 0
+percentage_of_votes = []
 
+# path for data 
 election_data_csv_path = os.path.join("Resources", "election_data.csv")
 
-#open and read the csv 
+
+    #open and read the csv 
 with open (election_data_csv_path, newline="") as csvfile: 
     csv_reader = csv.reader(csvfile, delimiter=",")
     csv_header = next(csvfile)
+
+    for row in csv_reader:
+        votes_per_candidates.append(row[2])
 
     # Sort the list by default ascending order
     sorted_list = sorted(votes_total)
