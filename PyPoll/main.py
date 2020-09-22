@@ -26,7 +26,7 @@ with open (election_data_csv_path, newline="") as csvfile:
         votes_per_candidates.append(row[2])
 
     # Sort the list by default ascending order
-    sorted_list = sorted(votes_total)
+    sorted_list = sorted(votes_per_candidates)
     
     # Arranges the sorted list 
     arrange_list = sorted_list
@@ -37,10 +37,11 @@ with open (election_data_csv_path, newline="") as csvfile:
     count_candidate = Counter (arrange_list) 
     votes_per_candidates.append(count_candidate.most_common())
 
-    # calculate the percentage of votes per candidate 
-    for item in votes_per_candidates:
-       
-        first = format((item[0][1])*100/(sum(count_candidate.values())),'.3f')
-        second = format((item[1][1])*100/(sum(count_candidate.values())),'.3f')
-        third = format((item[2][1])*100/(sum(count_candidate.values())),'.3f')
-        fourth = format((item[3][1])*100/(sum(count_candidate.values())),'.3f')
+
+print("Election Results")
+print("-------------------------")
+print(f"Total Votes:  {sum(count_candidate.values())}")
+print(f"{votes_per_candidates[0][0][0]}")
+print(f"{votes_per_candidates[0][1][0]}")
+print(f"{votes_per_candidates[0][2][0]}")
+print(f"{votes_per_candidates[0][3][0]}")
